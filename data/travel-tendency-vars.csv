@@ -1,0 +1,32 @@
+﻿이름,컬럼명,태그,영문 태그,설문 데이터 형태
+날씨민감형,weather sensitive,민감,sensitive,범주형
+밀집회피형,dense avoidance,민감,sensitive,범주형
+교류회피형,exchange avoidance,민감,sensitive,범주형
+외부영향형,external impact,민감,sensitive,랭킹형
+소통회피형,avoiding communication,민감,sensitive,랭킹형
+불편회피형,uncomfortable avoidance,민감,sensitive,랭킹형
+즉흥참여형,improvised participation,즉흥,unprepared,범주형
+피로최소형,minimal fatigue,즉흥,unprepared,범주형
+식당직관형,restaurant insuitive,즉흥,unprepared,랭킹형
+즉흥선택형,improvised selective,즉흥,unprepared,랭킹형
+계획무관형,plan irregularity,즉흥,unprepared,랭킹형
+카페즉흥형,cafe improvisation,즉흥,unprepared,랭킹형
+리뷰무관심형,review indifference,미디어공유,media sharing,랭킹형
+리뷰검증형,review verification,즉흥,unprepared,랭킹형
+여행공유형,travel sharing,미디어공유,media sharing,범주형
+음식공유형,food sharing,미디어공유,media sharing,랭킹형
+시각중시형,visual oriented,미디어공유,media sharing,랭킹형
+감성사진형,emotional photography,미디어공유,media sharing,랭킹형
+모험선호형,adventure preference,도전,challenge,범주형
+도움요청형,help request,도전,challenge,랭킹형
+새로움추구형,newness seeking,도전,challenge,랭킹형
+숙소자립형,accommodation selfstand,도전,challenge,랭킹형
+편의추구형,convenience seeking,플렉스,flex,범주형
+해결투자형,resolved investment,플렉스,flex,범주형
+숙소 투자형,accommodation investment,플렉스,flex,랭킹형
+럭셔리형,luxury,플렉스,flex,랭킹형
+서비스 경험형,service experience,플렉스,flex,랭킹형
+카페투자형,cafe investment,플렉스,flex,랭킹형
+단순행동형,simple behavior,신속,quick,범주형
+신속추구형,fast seeking,신속,quick,랭킹형
+현지체험형,local expericence,도전,challenge,랭킹형
