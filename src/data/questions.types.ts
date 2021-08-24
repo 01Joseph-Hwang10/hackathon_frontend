@@ -8,10 +8,16 @@ export interface Question {
 
 interface QuestionChoices {
     title: string;
-    vars: QuestionVars[];
+    vars: QuestionVars[] | QuestionIdAndWeight[];
 }
 
 interface QuestionVars {
+    title: string;
+    tagTitle: string;
+    weight: string;
+}
+
+interface QuestionIdAndWeight {
     id: number;
     weight: number;
 }
