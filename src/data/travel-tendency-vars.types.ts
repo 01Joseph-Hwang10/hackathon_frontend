@@ -7,7 +7,7 @@ export type TTVTags =
     | "flex"
     | "quick"
 
-export interface TTVVars {
+export interface TTVVar {
     title: string;
     name: string;
     tagTitle: string;

@@ -13,10 +13,10 @@ TAG_NAME = 3
 DATA_TITLE = 4
 
 codelines = [
-    'import { TTVVars } from "./travel-tendency-vars.types"',
+    'import { TTVVar } from "./travel-tendency-vars.types"',
     '',
     '',
-    'export const ttvVars: TTVVars[] = ['
+    'export const ttvVars: TTVVar[] = ['
 ]
 
 def cleaned_input(string: str) -> str:

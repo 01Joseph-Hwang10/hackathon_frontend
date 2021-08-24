@@ -1,7 +1,7 @@
-import { TTVVars } from "./travel-tendency-vars.types"
+import { TTVVar } from "./travel-tendency-vars.types"
 
 
-export const ttvVars: TTVVars[] = [
+export const ttvVars: TTVVar[] = [
   {
     title: "날씨민감형",
     name: "weatherSensitive",

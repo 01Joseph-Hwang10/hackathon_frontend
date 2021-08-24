@@ -6,18 +6,18 @@ export interface Question {
     choices: QuestionChoices[];
 }
 
-interface QuestionChoices {
+export interface QuestionChoices {
     title: string;
-    vars: QuestionVars[] | QuestionIdAndWeight[];
+    vars: QuestionVar[] | QuestionVarId[];
 }
 
-interface QuestionVars {
+export interface QuestionVar {
     title: string;
     tagTitle: string;
     weight: string;
 }
 
-interface QuestionIdAndWeight {
+export interface QuestionVarId {
     id: number;
     weight: number;
 }
