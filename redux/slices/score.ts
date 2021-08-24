@@ -14,16 +14,20 @@ export const initTotalScore: TotalScore = {
 };
 
 interface ScoreState {
-  variables: QuestionVarId[][];
+  variables: QuestionVarId[][][];
   totalScore: TotalScore;
+  kMeansResult: string | null;
+  gmmResult: string | null;
 }
 
 const initialState: ScoreState = {
   variables: [],
   totalScore: initTotalScore,
+  kMeansResult: null,
+  gmmResult: null,
 };
 
-export type PushVariablesInput = QuestionVarId[];
+export type PushVariablesInput = QuestionVarId[][];
 
 const pushVariablesReducer: CaseReducer<
   ScoreState,
@@ -41,14 +45,46 @@ const setTotalScoreReducer: CaseReducer<
   state.totalScore = totalScore;
 };
 
+const resetStateReducer: CaseReducer<ScoreState> = (state) => {
+  state.variables = [];
+  state.totalScore = initTotalScore;
+};
+
+export type SetKMeansResultInput = string;
+
+const setKMeansResultReducer: CaseReducer<
+  ScoreState,
+  PayloadAction<SetKMeansResultInput>
+> = (state, { payload: result }) => {
+  state.kMeansResult = result;
+};
+
+export type SetGMMResultInput = string;
+
+const setGMMResultReducer: CaseReducer<
+  ScoreState,
+  PayloadAction<SetGMMResultInput>
+> = (state, { payload: result }) => {
+  state.gmmResult = result;
+};
+
 export const {
   reducer,
-  actions: { pushVariables, setTotalScore },
+  actions: {
+    pushVariables,
+    setTotalScore,
+    resetState,
+    setKMeansResult,
+    setGMMResult,
+  },
 } = createSlice({
   name: "scoreSlice",
   initialState,
   reducers: {
     pushVariables: pushVariablesReducer,
     setTotalScore: setTotalScoreReducer,
+    resetState: resetStateReducer,
+    setKMeansResult: setKMeansResultReducer,
+    setGMMResult: setGMMResultReducer,
   },
 });

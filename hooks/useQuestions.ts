@@ -1,23 +1,22 @@
+import { questions } from "@src/data/questions";
 import { Question } from "@src/data/questions.types";
-import questionGenerator from "@src/functions/question-generator";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface UseQuestionOutput {
-  goToNext: () => void;
-  question: Question | void;
+  goToNext: () => boolean;
+  question: Question;
   questionIndex: number;
 }
 
 export const useQuestions = (): UseQuestionOutput => {
-  const [questionIndex, setQuestionIndex] = useState<number>(-1);
-  const [question, setQuestion] = useState<Question | void>(null);
-  const questions = questionGenerator();
-  const goToNext = () => {
+  const [questionIndex, setQuestionIndex] = useState<number>(0);
+  const question = questions[questionIndex];
+  const goToNext = (): boolean => {
+    if (questionIndex + 1 === questions.length) {
+      return false;
+    }
     setQuestionIndex(questionIndex + 1);
-    setQuestion(questions.next().value ?? null);
+    return true;
   };
-  useEffect(() => {
-    goToNext();
-  }, []);
   return { question, goToNext, questionIndex };
 };

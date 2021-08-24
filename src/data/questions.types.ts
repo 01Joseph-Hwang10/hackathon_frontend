@@ -3,17 +3,19 @@ export type TTVQuestionType = "ranking" | "range"
 export interface Question {
     title: string;
     questionType: TTVQuestionType;
-    choices: QuestionChoices[];
+    choices: QuestionChoice[];
+    numChoices: number;
 }
 
-export interface QuestionChoices {
+export interface QuestionChoice {
+    id: string;
     title: string;
     vars: QuestionVar[] | QuestionVarId[];
 }
 
 export interface QuestionVar {
     title: string;
-    tagTitle: string;
+    tagTitle: string[];
     weight: string;
 }
 

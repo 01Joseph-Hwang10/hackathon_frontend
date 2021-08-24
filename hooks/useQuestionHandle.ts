@@ -11,7 +11,6 @@ const varToVarId = (questionVar: QuestionVar): QuestionVarId => {
 
 export interface UseQuestionHandleInput {
   updateStore: (vars: QuestionVarId[]) => void;
-  questionIndex: number;
 }
 
 type UseQuestionHandleOutput = {
@@ -21,7 +20,6 @@ type UseQuestionHandleOutput = {
 
 export const useQuestionHandle = ({
   updateStore,
-  questionIndex,
 }: UseQuestionHandleInput): UseQuestionHandleOutput => {
   const [questionVarIds, setQuestionVarIds] = useState<QuestionVarId[]>([]);
   const setNextAnswer = (questionVar: QuestionVar): void => {
@@ -30,10 +28,5 @@ export const useQuestionHandle = ({
   const resetAnswers = (): void => {
     setQuestionVarIds([]);
   };
-  useEffect(() => {
-    if (questionVarIds.length > 0) {
-      updateStore(questionVarIds);
-    }
-  }, [questionIndex]);
   return { setNextAnswer, resetAnswers };
 };

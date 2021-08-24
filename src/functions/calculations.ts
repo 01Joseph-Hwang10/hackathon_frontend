@@ -1,10 +1,13 @@
 import { initTotalScore, TotalScore } from "@slices/score";
+import { Cluster, ClusterType } from "@src/data/cluster.types";
 import {
   rangeDatasetDetail,
   rangeDatasetGroup,
   rankingDatasetDetail,
   rankingDatasetGroup,
 } from "@src/data/dataset";
+import { gmmClusters } from "@src/data/gmm";
+import { kMeansClusters } from "@src/data/k-means";
 import { QuestionVarId } from "@src/data/questions.types";
 import { ttvVars } from "@src/data/travel-tendency-vars";
 import { TTVTags, TTVVar } from "@src/data/travel-tendency-vars.types";
@@ -18,40 +21,62 @@ export const normalize = ({
   x: number;
   xmin: number;
   xmax: number;
-}): number => (x - xmin) / (xmax - xmin);
+}): number => {
+  return (x - xmin) / (xmax - xmin);
+};
 
 type GroupScore = Partial<Record<TTVTags, number>>;
 
-export const calculateScore = (variables: QuestionVarId[][]): TotalScore => {
-  const calculationStore: Record<string, number> = {};
+export const calculateScore = (variables: QuestionVarId[][][]): TotalScore => {
+  const calculationScore: Record<string, number> = {};
   const rankingGroupScore: GroupScore = {};
   const rangeGroupScore: GroupScore = {};
-  const totalGroupScore: TotalScore = initTotalScore;
-  variables.forEach((variableSet) => {
-    variableSet.forEach((variable, index) => {
-      const rankingFactor = index + 1;
-      calculateScore[variable.id.toString()] += rankingFactor * variable.weight;
+  const totalGroupScore: Partial<TotalScore> = {};
+  variables.forEach((questionVariable, questionIndex) => {
+    questionVariable.forEach((rankingVariables, rankingIndex) => {
+      const rankingFactor = rankingIndex + 1;
+      rankingVariables.forEach((variable) => {
+        const currentScore = calculationScore[variable.id.toString()];
+        const factoredWeight = rankingFactor * variable.weight;
+        calculationScore[variable.id.toString()] = currentScore
+          ? currentScore + factoredWeight
+          : factoredWeight;
+      });
     });
   });
-  Object.entries(calculationStore).forEach(([varId, score]) => {
+  Object.entries(calculationScore).forEach(([varId, score]) => {
     const ttvVar = ttvVars[varId] as TTVVar;
     if (getTTVDataTypeByDataTypeTitle(ttvVar.dataTypeTitle) === "range") {
       const ttvRow = findRowByTitle(rangeDatasetDetail, ttvVar.title);
-      rangeGroupScore[ttvVar.tag] += normalize({
-        x: score,
-        xmin: ttvRow[1],
-        xmax: ttvRow[2],
+      ttvVar.tag.forEach((aTag) => {
+        const currentScore = rangeGroupScore[aTag];
+        const normalizedWeight = score;
+        // const normalizedWeight = normalize({
+        //   x: score,
+        //   xmin: ttvRow[1],
+        //   xmax: ttvRow[2],
+        // });
+        rangeGroupScore[aTag] = currentScore
+          ? currentScore + normalizedWeight
+          : normalizedWeight;
       });
     } else {
       const ttvRow = findRowByTitle(rankingDatasetDetail, ttvVar.title);
-      rankingGroupScore[ttvVar.tag] += normalize({
-        x: score,
-        xmin: ttvRow[1],
-        xmax: ttvRow[2],
+      ttvVar.tag.forEach((aTag) => {
+        const currentScore = rankingGroupScore[aTag];
+        const normalizedWeight = score;
+        // const normalizedWeight = normalize({
+        //   x: score,
+        //   xmin: ttvRow[1],
+        //   xmax: ttvRow[2],
+        // });
+        rankingGroupScore[aTag] = currentScore
+          ? currentScore + normalizedWeight
+          : normalizedWeight;
       });
     }
   });
-  Object.keys(totalGroupScore).forEach((tag) => {
+  Object.keys(initTotalScore).forEach((tag) => {
     const rangeTTVRow = findRowByTitle(rangeDatasetGroup, tag);
     const rankingTTVRow = findRowByTitle(rankingDatasetGroup, tag);
     const normalizedRangeScore = normalize({
@@ -68,5 +93,32 @@ export const calculateScore = (variables: QuestionVarId[][]): TotalScore => {
       normalizedRangeScore * 0.4 + normalizedRankingScore * 0.6;
   });
 
-  return totalGroupScore;
+  return totalGroupScore as TotalScore;
+};
+
+export const estimateClusterLabel = (
+  score: TotalScore,
+  type: ClusterType
+): string => {
+  let clusters: Cluster[];
+  if (type === "k-means") {
+    clusters = kMeansClusters;
+  } else {
+    clusters = gmmClusters;
+  }
+
+  const distances: [number, string][] = clusters.map(
+    ({ center, clusterLabel }) => {
+      let dStore = 0;
+      for (const tag in center) {
+        dStore += (center[tag] - score[tag]) ** 2;
+      }
+      return [dStore, clusterLabel];
+    }
+  );
+
+  const [_, label]: [number, string] = distances.reduce((acc, cur) => {
+    return acc[0] > cur[0] ? cur : acc;
+  });
+  return label;
 };

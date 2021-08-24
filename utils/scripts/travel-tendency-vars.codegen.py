@@ -27,6 +27,9 @@ def cleaned_input(string: str) -> str:
         words[i] = words[i].capitalize()
     return ''.join(words)
 
+def csv_to_list(row: str) -> list:
+    return '[' + ','.join(list(map(lambda e: '"' + e + '"', row.split(',')))) + ']'
+
 with open(data_path, 'r') as csvfile:
     reader = csv.reader(csvfile)
     header = next(reader)
@@ -34,8 +37,8 @@ with open(data_path, 'r') as csvfile:
         codelines.append(indent('{', 2))
         codelines.append(indent('title: "%s",' % cleaned_input(row[TITLE]) ,4))
         codelines.append(indent('name: "%s",' % cleaned_input(row[NAME]) ,4))
-        codelines.append(indent('tagTitle: "%s",' % cleaned_input(row[TAG_TITLE]) ,4))
-        codelines.append(indent('tag: "%s",' % cleaned_input(row[TAG_NAME]) ,4))
+        codelines.append(indent('tagTitle: %s,' % cleaned_input(csv_to_list(row[TAG_TITLE])), 4))
+        codelines.append(indent('tag: %s,' % cleaned_input(csv_to_list(row[TAG_NAME])) ,4))
         codelines.append(indent('dataTypeTitle: "%s",' % cleaned_input(row[DATA_TITLE]) ,4))
         codelines.append(indent('},', 2))
     codelines.append('];')

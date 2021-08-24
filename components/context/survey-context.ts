@@ -2,8 +2,8 @@ import { Question } from "@src/data/questions.types";
 import React from "react";
 
 interface SurveyContextProps {
-  goToNext: () => void;
-  question: Question | void;
+  goToNext: () => boolean;
+  question: Question;
   questionIndex: number;
 }
 

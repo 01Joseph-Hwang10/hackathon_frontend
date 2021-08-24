@@ -10,7 +10,7 @@ export type TTVTags =
 export interface TTVVar {
     title: string;
     name: string;
-    tagTitle: string;
-    tag: TTVTags;
+    tagTitle: string[];
+    tag: TTVTags[];
     dataTypeTitle: string;
 }
