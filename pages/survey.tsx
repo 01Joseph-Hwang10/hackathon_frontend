@@ -3,6 +3,7 @@ import Question from "@components/survey/question";
 import Story from "@components/survey/story";
 import { useQuestions } from "@hooks/useQuestions";
 import { Colors } from "@src/constants";
+import Head from "next/head";
 import React from "react";
 
 interface SurveyProps {}
@@ -30,6 +31,9 @@ const Survey: React.FC<SurveyProps> = () => {
     <SurveyContextProvider
       value={{ questionOrStory, goToNext, questionIndex, cleanUpCurrent }}
     >
+      <Head>
+        <title>여행성향 테스트 | 트립빌더</title>
+      </Head>
       <div
         style={{ ...rootStyle, ...transitionStyle, ...opacityStyle }}
         className={
