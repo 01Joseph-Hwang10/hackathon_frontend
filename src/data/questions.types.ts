@@ -1,7 +1,13 @@
 export type TTVQuestionType = "ranking" | "range"
 
-export interface Question {
+export type QuestionOrStory = 'question' | 'story'
+
+interface QuestionStoryBase {
+    type: QuestionOrStory;
     title: string;
+}
+
+export interface Question extends QuestionStoryBase {
     questionType: TTVQuestionType;
     choices: QuestionChoice[];
     numChoices: number;
@@ -22,4 +28,8 @@ export interface QuestionVar {
 export interface QuestionVarId {
     id: number;
     weight: number;
+}
+
+export interface Story extends QuestionStoryBase {
+    storyId: number;
 }

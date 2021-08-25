@@ -32,18 +32,19 @@ const Result: React.FC<ResultProps> = ({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const totalScore = calculateScore(variables);
-    const kMeansResult = estimateClusterLabel(totalScore, "k-means");
-    const gmmResult = estimateClusterLabel(totalScore, "gmm");
-    setTotalScore(totalScore);
-    setKMeansResult(kMeansResult);
-    setGMMResult(gmmResult);
-    setLoading(false);
+    (async () => {
+      const totalScore = calculateScore(variables);
+      const kMeansResult = estimateClusterLabel(totalScore, "k-means");
+      const gmmResult = estimateClusterLabel(totalScore, "gmm");
+      setTotalScore(totalScore);
+      setKMeansResult(kMeansResult);
+      setGMMResult(gmmResult);
+      setLoading(false);
+    })();
   }, []);
 
   return (
-    <div className="justify-center items-center h-screen w-screen flex flex-col">
-      <span className="font-bold text-xl">Result</span>
+    <div className="justify-start items-center h-screen w-screen flex flex-col">
       {loading ? <ResultLoading /> : <ResultBody />}
     </div>
   );

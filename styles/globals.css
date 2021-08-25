@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+html, body {
+    background-color: #f7f8fb;
+}
+
 @keyframes rainbow {
     0% {
         filter: hue-rotate(0deg);
@@ -8,6 +12,45 @@
     100% {
         filter: hue-rotate(360deg);
     }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(66.6%);
+    }
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fade-in {
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.fade-out {
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
 }
 
 .rainbow {

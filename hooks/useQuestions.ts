@@ -1,22 +1,45 @@
 import { questions } from "@src/data/questions";
-import { Question } from "@src/data/questions.types";
-import { useState } from "react";
+import { Question, Story } from "@src/data/questions.types";
+import { useEffect, useState } from "react";
 
 interface UseQuestionOutput {
   goToNext: () => boolean;
-  question: Question;
+  questionOrStory: Question | Story;
   questionIndex: number;
+  onFadeOut: boolean;
+  cleanUpCurrent: () => void;
 }
 
 export const useQuestions = (): UseQuestionOutput => {
+  const [index, setIndex] = useState<number>(0);
   const [questionIndex, setQuestionIndex] = useState<number>(0);
-  const question = questions[questionIndex];
+  const [onFadeOut, setOnFadeOut] = useState(true);
+  const questionOrStory = questions[index];
+  const cleanUpCurrent = () => {
+    setOnFadeOut(true);
+  };
   const goToNext = (): boolean => {
-    if (questionIndex + 1 === questions.length) {
+    if (index + 1 === questions.length) {
       return false;
     }
-    setQuestionIndex(questionIndex + 1);
+    setOnFadeOut(false);
+    setIndex(index + 1);
+    if (
+      index + 1 < questions.length &&
+      questions[index + 1].type === "question"
+    ) {
+      setQuestionIndex(questionIndex + 1);
+    }
     return true;
   };
-  return { question, goToNext, questionIndex };
+  useEffect(() => {
+    setOnFadeOut(false);
+  }, []);
+  return {
+    questionOrStory,
+    goToNext,
+    questionIndex,
+    onFadeOut,
+    cleanUpCurrent,
+  };
 };

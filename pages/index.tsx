@@ -5,7 +5,8 @@ import { resetState } from "@slices/score";
 import { connect, ConnectedProps } from "react-redux";
 import { imageNameMapping } from "@src/data/image-name-mapping";
 import { Colors } from "@src/constants";
-import HomeIconText from "@components/icon_texts/home_icon_text";
+import HomeIconText from "@components/icon_texts/home-icon-text";
+import TBLargeButton from "@components/tb-large-button";
 
 type HomeReduxProps = ConnectedProps<typeof connector>;
 
@@ -41,13 +42,11 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
         id="interactions"
         className="flex flex-col gap-5 justify-center items-center w-full h-2/6"
       >
-        <button
-          style={buttonStyle}
-          className="w-11/12 py-6 justify-center items-center flex rainbow"
+        <TBLargeButton
           onClick={startSurvey}
-        >
-          <span style={buttonTextStyle}>여행 한 번 떠나볼까?</span>
-        </button>
+          text={"여행 한 번 떠나볼까?"}
+          numChoices={0}
+        />
         <div className="justify-center items-center flex flex-col gap-1">
           <span style={subTextStyle}>인스타그램 공유 이벤트 진행 중!</span>
           <span style={subTextStyle}>@teamtripbuilder</span>
@@ -93,18 +92,6 @@ const infoTextStyle: React.CSSProperties = {
   letterSpacing: "normal",
 };
 
-const buttonTextStyle: React.CSSProperties = {
-  fontFamily: "NanumSquareEB",
-  color: "#191919",
-  fontWeight: "normal",
-  fontSize: "18px",
-  fontStretch: "normal",
-  fontStyle: "normal",
-  lineHeight: 1.33,
-  textAlign: "center",
-  letterSpacing: "normal",
-};
-
 const subTextStyle: React.CSSProperties = {
   fontFamily: "NanumSquareR",
   color: "#707070",
@@ -115,8 +102,4 @@ const subTextStyle: React.CSSProperties = {
   lineHeight: 1.43,
   textAlign: "center",
   letterSpacing: "normal",
-};
-
-const buttonStyle: React.CSSProperties = {
-  backgroundColor: "#d6ebf4",
 };

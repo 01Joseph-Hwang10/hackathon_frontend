@@ -14,6 +14,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+import TBLargeButton from "@components/tb-large-button";
+import { pushChoices, PushChoicesInput } from "@slices/choice";
 
 type QuestionReduxProps = ConnectedProps<typeof connector>;
 
@@ -25,20 +27,22 @@ interface ChoiceButtonProps extends QuestionReduxProps {
   choiceIndexes: number[];
   numChoices: number;
   selectedChoices: QuestionVarId[][];
+  lenChoices?: number;
 }
 
 const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   choice: { title, vars },
   choiceIndex,
   pushChoice,
-  resetChoices,
   choiceIndexes,
   numChoices,
   selectedChoices,
   pushVariables: PushVariables,
+  lenChoices,
+  pushChoices: PushChoices,
 }) => {
   const router = useRouter();
-  const { goToNext } = useContext(SurveyContext);
+  const { goToNext, questionIndex, cleanUpCurrent } = useContext(SurveyContext);
   const [focusedOrder, setFocusedOrder] = useState(0);
   const transTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -51,6 +55,7 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
     pushChoice(variableIds, choiceIndex);
     if (choiceIndexes.length + 1 === numChoices) {
       PushVariables([variableIds, ...selectedChoices]);
+      PushChoices([...choiceIndexes, choiceIndex]);
     }
   };
 
@@ -59,11 +64,12 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
       choiceIndexes.findIndex((index) => index === choiceIndex) + 1
     );
     if (choiceIndexes.length === numChoices) {
+      cleanUpCurrent();
       transTimeoutRef.current = setTimeout(() => {
         if (!goToNext()) {
           router.push("/result");
         }
-      }, 500);
+      }, 300);
     }
     return () => {
       transTimeoutRef.current && clearTimeout(transTimeoutRef.current);
@@ -71,17 +77,23 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   }, [choiceIndexes]);
 
   return (
-    <button onClick={updateStore} className="flex flex-col">
-      {numChoices !== 1 && focusedOrder && <span>{focusedOrder}</span>}
-      {numChoices === 1 && focusedOrder && <span>checked</span>}
-      <span>{title}</span>
-    </button>
+    <>
+      <TBLargeButton
+        half={lenChoices > 5 && questionIndex !== 7}
+        onClick={updateStore}
+        text={title}
+        numChoices={numChoices}
+        order={focusedOrder}
+      />
+      <div className="w-px h-2.5"></div>
+    </>
   );
 };
 
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   pushVariables: (payload: PushVariablesInput) =>
     dispatch(pushVariables(payload)),
+  pushChoices: (payload: PushChoicesInput) => dispatch(pushChoices(payload)),
 });
 
 const connector = connect(null, mapDispatchToProps);

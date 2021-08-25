@@ -1,16 +1,18 @@
-import { Question } from "@src/data/questions.types";
+import { Question, Story } from "@src/data/questions.types";
 import React from "react";
 
 interface SurveyContextProps {
   goToNext: () => boolean;
-  question: Question;
+  questionOrStory: Question | Story;
   questionIndex: number;
+  cleanUpCurrent: () => void;
 }
 
 export const SurveyContext = React.createContext<SurveyContextProps>({
   goToNext: () => null,
-  question: null,
+  questionOrStory: null,
   questionIndex: -1,
+  cleanUpCurrent: () => null,
 });
 
 export const SurveyContextProvider = SurveyContext.Provider;

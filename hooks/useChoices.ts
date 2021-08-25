@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 interface UseChoicesInput {
   questionIndex: number;
+  numChoices: number;
 }
 
 interface UseChoicesOutput {
@@ -14,6 +15,7 @@ interface UseChoicesOutput {
 
 export const useChoices = ({
   questionIndex,
+  numChoices,
 }: UseChoicesInput): UseChoicesOutput => {
   const [selectedChoiceIndexes, setSelectedChoiceIndexes] = useState<number[]>(
     []
@@ -26,8 +28,14 @@ export const useChoices = ({
   };
 
   const pushChoice = (choice: QuestionVarId[], index: number) => {
-    setSelectedChoices([choice, ...selectedChoices]);
-    setSelectedChoiceIndexes([...selectedChoiceIndexes, index]);
+    if (selectedChoiceIndexes.length === numChoices) return;
+    if (selectedChoiceIndexes.includes(index)) {
+      setSelectedChoices([choice]);
+      setSelectedChoiceIndexes([index]);
+    } else {
+      setSelectedChoices([choice, ...selectedChoices]);
+      setSelectedChoiceIndexes([...selectedChoiceIndexes, index]);
+    }
   };
 
   useEffect(() => {
