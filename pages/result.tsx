@@ -1,5 +1,6 @@
 import ResultBody from "@components/result/result-body";
 import ResultLoading from "@components/result/result-loading";
+import { postAnswers } from "@redux/form/request-forms";
 import { RootState } from "@redux/root-reducer";
 import {
   setGMMResult,
@@ -18,6 +19,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Dispatch } from "redux";
+import Head from "next/head";
 
 type ResultReduxProps = ConnectedProps<typeof connector>;
 
@@ -28,6 +30,7 @@ const Result: React.FC<ResultProps> = ({
   setTotalScore,
   setKMeansResult,
   setGMMResult,
+  choices,
 }) => {
   const [loading, setLoading] = useState(true);
 
@@ -36,6 +39,7 @@ const Result: React.FC<ResultProps> = ({
       const totalScore = calculateScore(variables);
       const kMeansResult = estimateClusterLabel(totalScore, "k-means");
       const gmmResult = estimateClusterLabel(totalScore, "gmm");
+      await postAnswers(choices);
       setTotalScore(totalScore);
       setKMeansResult(kMeansResult);
       setGMMResult(gmmResult);
@@ -52,6 +56,7 @@ const Result: React.FC<ResultProps> = ({
 
 const mapStateToProps = (state: RootState) => ({
   variables: state.score.variables,
+  choices: state.choice.choices,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({

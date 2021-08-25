@@ -28,6 +28,27 @@ export const findTTVTagByTagTitle = (tagTitle: string): TTVTags => {
   /* eslint-disable */
 };
 
+export const findTagTitleByTTVTag = (ttvTag: TTVTags): string => {
+  /* eslint-disable */
+  switch (ttvTag) {
+    case "flex":
+    return "플렉스";
+      case "quick":
+    return "신속";
+      case "sensitive":
+    return "민간";
+      case "unprepared":
+    return "즉흥";
+      case "mediaSharing":
+    return "미디어 공유";
+      case "challenge":
+    return "도전";
+    default:
+      throw Error();
+  }
+  /* eslint-disable */
+}
+
 export const getTTVDataTypeByDataTypeTitle = (dataTypeTitle: string): TTVDataType => {
   switch (dataTypeTitle) {
     case "범주형":

@@ -1,0 +1,32 @@
+<svg id="tab_bar_b" xmlns="http://www.w3.org/2000/svg" width="375.002" height="66.001" viewBox="0 0 375.002 66.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dcdfea;
+      }
+
+      .cls-2 {
+        fill: #f7f8fb;
+      }
+
+      .cls-3 {
+        fill: #707070;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 20px;
+        font-family: NanumSquareR, NanumSquare;
+      }
+
+      .cls-4 {
+        fill: #191919;
+      }
+    </style>
+  </defs>
+  <g id="tab_2background" transform="translate(0 0)">
+    <path id="합치기_1" data-name="합치기 1" class="cls-1" d="M11.815,66V12a12,12,0,0,1,12-12h175.72V66Zm0,0H-.18a12.014,12.014,0,0,0,12-12V66h0Z" transform="translate(199.535 66.001) rotate(180)"/>
+    <path id="합치기_2" data-name="합치기 2" class="cls-2" d="M11.782,66H-.212A12.014,12.014,0,0,0,11.783,54V66Zm0,0V12a12,12,0,0,1,12-12H199V66Z" transform="translate(176 0)"/>
+  </g>
+  <text id="결과_A" data-name="결과 A" class="cls-3" transform="translate(94 39)"><tspan x="-27.28" y="0">결과 A</tspan></text>
+  <text id="결과_B" data-name="결과 B" class="cls-4" transform="translate(282 39)"><tspan x="-26.85" y="0">결과 B</tspan></text>
+</svg>

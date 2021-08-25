@@ -1,7 +1,16 @@
+import ResultIconText from "@components/icon_texts/result-icon-text";
 import { RootState } from "@redux/root-reducer";
+import { ClusterType } from "@src/data/cluster.types";
 import React from "react";
+import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";
-import DoItAgain from "./do-it-again";
+import ABTest from "./a-b-test";
+import Descriptions from "./descriptions";
+import EncorageAnotherAnalysis from "./encorage-another-analysis";
+import HexagonPlot from "./hexagon-plot";
+import Restart from "./restart";
+import Share from "./share";
+import TabBar from "./tab-bar";
 
 type ResultBodyReduxProps = ConnectedProps<typeof connector>;
 
@@ -12,14 +21,32 @@ const ResultBody: React.FC<ResultBodyProps> = ({
   kMeanResult,
   gmmResult,
 }) => {
+  const [viewMode, setViewMode] = useState<ClusterType>("k-means");
+  const toggleViewMode = () => {
+    if (viewMode === "gmm") {
+      setViewMode("k-means");
+    } else {
+      setViewMode("gmm");
+    }
+  };
+
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="w-64 break-words">
-        <span>{JSON.stringify(totalScore)}</span>
+    <div className="flex flex-col justify-start items-center">
+      <TabBar mode={viewMode} toggleMode={toggleViewMode} />
+      <div className="w-1/2 py-10">
+        <ResultIconText />
       </div>
-      <span>{`K-Mean: ${kMeanResult}`}</span>
-      <span>{`GMM: ${gmmResult}`}</span>
-      <DoItAgain />
+      <div id="illustration"></div>
+      <Descriptions
+        kMeansResult={kMeanResult}
+        gmmResult={gmmResult}
+        mode={viewMode}
+      />
+      <HexagonPlot totalScore={totalScore} />
+      <EncorageAnotherAnalysis mode={viewMode} toggleMode={toggleViewMode} />
+      <ABTest />
+      <Restart />
+      <Share />
     </div>
   );
 };

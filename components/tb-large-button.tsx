@@ -5,7 +5,7 @@ interface TBLargeButtonProps {
   text: string;
   half?: boolean;
   order?: number;
-  numChoices: number;
+  numChoices?: number;
 }
 
 const TBLargeButton: React.FC<TBLargeButtonProps> = ({
