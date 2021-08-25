@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const BASE_URL = "http://stti-api.tripbuilder.co.kr/";
+const BASE_URL = "http://stti-api.tripbuilder.co.kr";
 const SNS = `${BASE_URL}/sns`; // get
 const LIKE = `${BASE_URL}/results`; // get
+const REPORT = `${BASE_URL}/report`; // post
 
 interface Answer {
   choices: number[];
@@ -26,7 +27,7 @@ const mapToDto = (choices: number[][]): PostAnswersDTO => {
 
 export const postAnswers = async (choices: number[][]): Promise<void> => {
   try {
-    const result = await axios.post(BASE_URL, mapToDto(choices));
+    const result = await axios.post(REPORT, mapToDto(choices));
     console.log(result);
   } catch (error) {
     console.error(error);
