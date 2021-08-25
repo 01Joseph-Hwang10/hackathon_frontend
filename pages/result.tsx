@@ -49,6 +49,9 @@ const Result: React.FC<ResultProps> = ({
 
   return (
     <div className="justify-start items-center h-screen w-screen flex flex-col">
+      <Head>
+        <title>여행성향 테스트 - 결과 | 트립빌더</title>
+      </Head>
       {loading ? <ResultLoading /> : <ResultBody />}
     </div>
   );

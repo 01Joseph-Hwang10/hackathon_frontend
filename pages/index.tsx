@@ -7,6 +7,7 @@ import { imageNameMapping } from "@src/data/image-name-mapping";
 import { Colors } from "@src/constants";
 import HomeIconText from "@components/icon_texts/home-icon-text";
 import TBLargeButton from "@components/tb-large-button";
+import Head from "next/head";
 
 type HomeReduxProps = ConnectedProps<typeof connector>;
 
@@ -23,6 +24,9 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
       className="justify-between flex items-center flex-col h-screen w-screen"
       style={rootStyle}
     >
+      <Head>
+        <title>여행성향 테스트 - 홈 | 트립빌더</title>
+      </Head>
       <div
         id="imageWrapper"
         className="bg-cover bg-center flex justify-center items-center w-full h-1/6"
