@@ -6,6 +6,8 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { useContext } from "react";
 
+const WAIT_TIME = 2000;
+
 const Story: React.FC = () => {
   const waitTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -23,7 +25,7 @@ const Story: React.FC = () => {
       transitionTimeoutRef.current = setTimeout(() => {
         goToNext();
       }, 300);
-    }, 700);
+    }, WAIT_TIME);
     return () => {
       if (waitTimeoutRef.current) clearTimeout(waitTimeoutRef.current);
       if (transitionTimeoutRef.current)

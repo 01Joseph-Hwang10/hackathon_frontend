@@ -4,6 +4,7 @@ const BASE_URL = "http://stti-api.tripbuilder.co.kr";
 const SNS = `${BASE_URL}/sns`; // get
 const LIKE = `${BASE_URL}/results`; // get
 const REPORT = `${BASE_URL}/report`; // post
+const AB_TEST = `${BASE_URL}/abtest`; // get
 
 interface Answer {
   choices: number[];
@@ -48,6 +49,19 @@ export const likePushed = async (liked: boolean): Promise<void> => {
     const result = await axios.get(LIKE, {
       params: {
         good: liked,
+      },
+    });
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const abPushed = async (type: "A" | "B"): Promise<void> => {
+  try {
+    const result = await axios.get(AB_TEST, {
+      params: {
+        type,
       },
     });
     console.log(result);

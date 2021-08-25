@@ -1,14 +1,16 @@
+import Footer from "@components/footer";
 import ResultIconText from "@components/icon_texts/result-icon-text";
 import { RootState } from "@redux/root-reducer";
 import { ClusterType } from "@src/data/cluster.types";
+import { resultNameMapping } from "@src/data/image-name-mapping";
 import React from "react";
 import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import ABTest from "./a-b-test";
 import Descriptions from "./descriptions";
 import EncorageAnotherAnalysis from "./encorage-another-analysis";
-import HexagonPlot from "./hexagon-plot";
-import Restart from "./restart";
+import Event from "./event";
+import GoodOrBad from "./good-or-bad";
 import Share from "./share";
 import TabBar from "./tab-bar";
 
@@ -36,17 +38,44 @@ const ResultBody: React.FC<ResultBodyProps> = ({
       <div className="w-1/2 py-10">
         <ResultIconText />
       </div>
-      <div id="illustration"></div>
+      <div
+        id="illustration"
+        className="flex justify-center items-center w-7/12"
+      >
+        <img
+          style={imgStyle}
+          src={
+            resultNameMapping["both"][
+              viewMode === "gmm" ? gmmResult : kMeanResult
+            ]
+          }
+        />
+      </div>
       <Descriptions
         kMeansResult={kMeanResult}
         gmmResult={gmmResult}
         mode={viewMode}
       />
-      <HexagonPlot totalScore={totalScore} />
+      <div
+        id="descriptionImage"
+        className="flex justify-center items-center w-screen my-10 mt-20"
+      >
+        <img
+          style={imgStyle}
+          className="w-full"
+          src={
+            resultNameMapping[viewMode][
+              viewMode === "gmm" ? gmmResult : kMeanResult
+            ]
+          }
+        />
+      </div>
+      <GoodOrBad />
       <EncorageAnotherAnalysis mode={viewMode} toggleMode={toggleViewMode} />
       <ABTest />
-      <Restart />
+      <Event />
       <Share />
+      <Footer />
     </div>
   );
 };
@@ -60,3 +89,7 @@ const mapStateToProps = (state: RootState) => ({
 const connector = connect(mapStateToProps);
 
 export default connector(ResultBody);
+
+const imgStyle: React.CSSProperties = {
+  objectFit: "cover",
+};

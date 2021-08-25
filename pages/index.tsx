@@ -8,6 +8,7 @@ import { Colors } from "@src/constants";
 import HomeIconText from "@components/icon_texts/home-icon-text";
 import TBLargeButton from "@components/tb-large-button";
 import Head from "next/head";
+import Link from "next/link";
 
 type HomeReduxProps = ConnectedProps<typeof connector>;
 
@@ -36,8 +37,9 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
       </div>
       <div
         id="subject"
-        className="flex justify-center items-center w-full h-2/6"
+        className="flex flex-col justify-center items-center w-full h-2/6"
       >
+        <img src="/icons/ic_airplane.png" />
         <div className="w-7/12">
           <HomeIconText />
         </div>
@@ -53,7 +55,17 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
         />
         <div className="justify-center items-center flex flex-col gap-1">
           <span style={subTextStyle}>인스타그램 공유 이벤트 진행 중!</span>
-          <span style={subTextStyle}>@teamtripbuilder</span>
+          <Link href="https://www.instagram.com/teamtripbuilder/">
+            <span
+              style={{
+                ...subTextStyle,
+                textDecoration: "underline",
+                color: "lightskyblue",
+              }}
+            >
+              @teamtripbuilder
+            </span>
+          </Link>
         </div>
       </div>
       <div

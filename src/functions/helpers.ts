@@ -36,7 +36,7 @@ export const findTagTitleByTTVTag = (ttvTag: TTVTags): string => {
       case "quick":
     return "신속";
       case "sensitive":
-    return "민간";
+    return "민감";
       case "unprepared":
     return "즉흥";
       case "mediaSharing":

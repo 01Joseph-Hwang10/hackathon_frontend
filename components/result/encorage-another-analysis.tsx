@@ -1,4 +1,3 @@
-import TBLargeButton from "@components/tb-large-button";
 import { ClusterType } from "@src/data/cluster.types";
 import React from "react";
 
@@ -17,13 +16,47 @@ const EncorageAnotherAnalysis: React.FC<EncorageAnotherAnalysisProps> = ({
   };
 
   return (
-    <div className="w-11/12 flex flex-col justify-start items-center my-10">
-      <TBLargeButton
+    <div className="w-10/12 flex flex-col justify-start items-center mt-28 gap-3">
+      <span style={titleStyle}>잠시만요! 다른 결과를 확인해보세요!</span>
+      <button
+        style={borderStyle}
         onClick={onClick}
-        text={mode === "gmm" ? "결과 A도 보시겠어요?" : "결과 B도 보시겠어요?"}
-      />
+        className="w-full py-7 flex justify-center items-center"
+      >
+        <span style={buttonTextStyle}>
+          결과 {mode === "gmm" ? "A" : "B"} 확인하기
+        </span>
+      </button>
     </div>
   );
 };
 
 export default EncorageAnotherAnalysis;
+
+const titleStyle: React.CSSProperties = {
+  fontFamily: "NanumSquareR",
+  color: "#191919",
+  fontWeight: "normal",
+  fontSize: "20px",
+  fontStretch: "normal",
+  fontStyle: "normal",
+  lineHeight: 1.2,
+  textAlign: "center",
+  letterSpacing: "normal",
+};
+
+const buttonTextStyle: React.CSSProperties = {
+  fontFamily: "NanumSquareEB",
+  color: "#108ccf",
+  fontWeight: "normal",
+  fontSize: "18px",
+  fontStretch: "normal",
+  fontStyle: "normal",
+  lineHeight: 1.33,
+  textAlign: "center",
+  letterSpacing: "normal",
+};
+
+const borderStyle: React.CSSProperties = {
+  border: "solid 1px #108ccf",
+};
