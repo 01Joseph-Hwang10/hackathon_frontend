@@ -36,9 +36,7 @@ const Survey: React.FC<SurveyProps> = () => {
       </Head>
       <div
         style={{ ...rootStyle, ...transitionStyle, ...opacityStyle }}
-        className={
-          "w-screen h-screen justify-center items-center flex flex-col"
-        }
+        className={"w-screen justify-center items-center flex flex-col"}
       >
         {questionOrStory && (
           <>{questionOrStory.type === "question" ? <Question /> : <Story />}</>

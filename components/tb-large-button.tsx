@@ -23,7 +23,7 @@ const TBLargeButton: React.FC<TBLargeButtonProps> = ({
           : { backgroundColor: "#d6ebf4" }
       }
       className={
-        "py-10 justify-center items-center flex px-5 relative " +
+        "py-10 justify-center items-center flex px-5 relative mb-2 mx-1 " +
         (half ? "w-5/12" : "w-11/12")
       }
       onClick={onClick}

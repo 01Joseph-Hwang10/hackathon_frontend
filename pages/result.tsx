@@ -20,6 +20,7 @@ import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Dispatch } from "redux";
 import Head from "next/head";
+import { useRef } from "react";
 
 type ResultReduxProps = ConnectedProps<typeof connector>;
 
@@ -32,19 +33,23 @@ const Result: React.FC<ResultProps> = ({
   setGMMResult,
   choices,
 }) => {
+  const delayRef = useRef<NodeJS.Timeout | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    (async () => {
+    delayRef.current = setTimeout(() => {
       const totalScore = calculateScore(variables);
       const kMeansResult = estimateClusterLabel(totalScore, "k-means");
       const gmmResult = estimateClusterLabel(totalScore, "gmm");
-      await postAnswers(choices);
+      postAnswers(choices);
       setTotalScore(totalScore);
       setKMeansResult(kMeansResult);
       setGMMResult(gmmResult);
       setLoading(false);
-    })();
+    }, 500);
+    return () => {
+      if (delayRef.current) clearTimeout(delayRef.current);
+    };
   }, []);
 
   return (

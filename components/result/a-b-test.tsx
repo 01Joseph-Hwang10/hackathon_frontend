@@ -17,9 +17,9 @@ const ABTest: React.FC = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center space-x-3 space-y-3 py-10 mt-12">
+    <div className="w-full flex flex-col justify-center items-center space-y-3 py-10 mt-12">
       <span style={titleStyle}>더 만족한 결과에 투표해 주세요</span>
-      <div className="w-full flex justify-center items-center space-x-3 space-y-3">
+      <div className="w-full flex justify-center items-center space-x-3">
         <TBLargeButton
           onClick={abPushedFactory("A")}
           text={loading ? "로딩중..." : "A"}

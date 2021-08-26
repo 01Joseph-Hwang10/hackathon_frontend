@@ -20,24 +20,18 @@ export const imageNameMapping: Record<string, string> = {
     logo1: '/icons/ic_tb_logo_letter_white.png'
 }
 
-export const resultNameMapping: Record<ClusterType | "both", Record<"0" | "1" | "2" | "3", string>> = {
-    "both": {
-        '0': '/image/result/img_main_noplan.png',
-        '1': '/image/result/img_main_sns.png',
-        '2': '/image/result/img_main_marathon.png',
-        '3': '/image/result/img_main_tmt.png',
-    },
+export const resultNameMapping: Record<ClusterType, Record<"0" | "1" | "2" | "3", [string, string]>> = {
     "k-means": {
-        '0': '/image/result/img_a_noplan.png',
-        '1': '/image/result/img_a_sns.png',
-        '2': '/image/result/img_a_marathon.png',
-        '3': '/image/result/img_a_tmt.png',
+        '0': ['/image/result/img_main_noplan.png', '/image/result/img_a_noplan.png'],
+        '1': ['/image/result/img_main_sns.png', '/image/result/img_a_sns.png'],
+        '2': ['/image/result/img_main_marathon.png', '/image/result/img_a_marathon.png'],
+        '3': ['/image/result/img_main_tmt.png', '/image/result/img_a_tmt.png'],
     },
     "gmm": {
-        '0': '/image/result/img_b_noplan.png',
-        '1': '/image/result/img_b_sns.png',
-        '2': '/image/result/img_b_marathon.png',
-        '3': '/image/result/img_b_tmt.png',
+        '3': ['/image/result/img_main_noplan.png', '/image/result/img_b_noplan.png'],
+        '0': ['/image/result/img_main_sns.png', '/image/result/img_b_sns.png'],
+        '1': ['/image/result/img_main_marathon.png', '/image/result/img_b_marathon.png'],
+        '2': ['/image/result/img_main_tmt.png', '/image/result/img_b_tmt.png'],
     },
 }
 

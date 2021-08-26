@@ -45,9 +45,9 @@ const ResultBody: React.FC<ResultBodyProps> = ({
         <img
           style={imgStyle}
           src={
-            resultNameMapping["both"][
+            resultNameMapping[viewMode][
               viewMode === "gmm" ? gmmResult : kMeanResult
-            ]
+            ][0]
           }
         />
       </div>
@@ -66,7 +66,7 @@ const ResultBody: React.FC<ResultBodyProps> = ({
           src={
             resultNameMapping[viewMode][
               viewMode === "gmm" ? gmmResult : kMeanResult
-            ]
+            ][1]
           }
         />
       </div>

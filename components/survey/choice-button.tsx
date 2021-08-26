@@ -77,16 +77,13 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   }, [choiceIndexes]);
 
   return (
-    <>
-      <TBLargeButton
-        half={lenChoices > 5 && questionIndex !== 7}
-        onClick={updateStore}
-        text={title}
-        numChoices={numChoices}
-        order={focusedOrder}
-      />
-      <div className="w-px h-2.5"></div>
-    </>
+    <TBLargeButton
+      half={lenChoices > 5 && questionIndex !== 7}
+      onClick={updateStore}
+      text={title}
+      numChoices={numChoices}
+      order={focusedOrder}
+    />
   );
 };
 

@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
         className="bg-cover bg-center flex justify-center items-center w-full h-1/6"
         style={imageWrapperStyle}
       >
-        <img src={imageNameMapping["logo1"]} />
+        <img src={imageNameMapping["logo1"]} style={{ width: "80px" }} />
       </div>
       <div
         id="subject"
@@ -46,14 +46,14 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
       </div>
       <div
         id="interactions"
-        className="flex flex-col space-x-5 space-y-5 justify-center items-center w-full h-2/6"
+        className="flex flex-col space-y-5 justify-center items-center w-full h-2/6"
       >
         <TBLargeButton
           onClick={startSurvey}
           text={"여행 한 번 떠나볼까?"}
           numChoices={0}
         />
-        <div className="justify-center items-center flex flex-col space-x-1 space-y-1">
+        <div className="justify-center items-center flex flex-col space-y-1">
           <span style={subTextStyle}>인스타그램 공유 이벤트 진행 중!</span>
           <Link href="https://www.instagram.com/teamtripbuilder/">
             <span

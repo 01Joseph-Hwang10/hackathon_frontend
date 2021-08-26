@@ -10,6 +10,13 @@ const MyApp = ({ Component, pageProps }) => {
     <Provider store={store}>
       <Head>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css" />
+        <link rel="shortcut icon" type="image/png" href="/icons/ic_tb_logo.png" />
+        <link rel="og:title" content="여행성향 테스트 by 트립빌더" />
+        <link rel="og:description" content="인스타그램 공유 이벤트 진행 중! @teamtripbuilder" />
+        <link rel="og:image" type="image/png" href="/icons/ic_tb_logo.png" />
+        <link rel="twitter:title" content="여행성향 테스트 by 트립빌더" />
+        <link rel="twitter:description" content="인스타그램 공유 이벤트 진행 중! @teamtripbuilder" />
+        <link rel="twitter:image" type="image/png" href="/icons/ic_tb_logo.png" />
       </Head>
       <Layout>
         <Component {...pageProps} />

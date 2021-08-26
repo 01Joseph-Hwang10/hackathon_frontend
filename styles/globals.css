@@ -3,6 +3,7 @@
 
 html, body {
     background-color: #f7f8fb;
+    width: 100vw;
 }
 
 @keyframes rainbow {

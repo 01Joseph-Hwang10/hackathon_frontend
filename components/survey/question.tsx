@@ -21,7 +21,7 @@ const Question: React.FC<QuestionProps> = () => {
       numChoices,
     });
   return (
-    <div className="flex flex-col items-center justify-start h-full w-full">
+    <div className="flex flex-col items-center justify-start w-full min-h-full space-y-10">
       <img style={imgStyle} src={imgSource} className="w-full h-1/6" />
       <div className="w-full h-2/6 flex flex-col justify-center items-center space-x-5 space-y-5">
         <div className="flex justify-center items-center">
@@ -36,11 +36,12 @@ const Question: React.FC<QuestionProps> = () => {
         </div>
       </div>
       <div
+        style={choicesStyle}
         className={
-          "flex h-3/6 w-full pb-10 " +
+          "flex w-full pb-10 " +
           (choices.length > 5
-            ? "flex-wrap justify-center items-start space-x-1 space-y-1"
-            : "flex-col justify-start items-center space-y-1")
+            ? "flex-wrap justify-center items-start"
+            : "flex-col justify-start items-center")
         }
       >
         {choices.map((choice, index) => (
@@ -77,4 +78,8 @@ const descTextStyle: React.CSSProperties = {
 
 const imgStyle: React.CSSProperties = {
   objectFit: "cover",
+};
+
+const choicesStyle: React.CSSProperties = {
+  minHeight: "50%",
 };

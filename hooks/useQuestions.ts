@@ -8,6 +8,7 @@ interface UseQuestionOutput {
   questionIndex: number;
   onFadeOut: boolean;
   cleanUpCurrent: () => void;
+  goBack: () => boolean;
 }
 
 export const useQuestions = (): UseQuestionOutput => {
@@ -32,6 +33,9 @@ export const useQuestions = (): UseQuestionOutput => {
     }
     return true;
   };
+  const goBack = (): boolean => {
+    return true;
+  };
   useEffect(() => {
     setOnFadeOut(false);
   }, []);
@@ -41,5 +45,6 @@ export const useQuestions = (): UseQuestionOutput => {
     questionIndex,
     onFadeOut,
     cleanUpCurrent,
+    goBack,
   };
 };
