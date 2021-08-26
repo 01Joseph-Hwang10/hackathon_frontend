@@ -23,11 +23,11 @@ const Question: React.FC<QuestionProps> = () => {
   return (
     <div className="flex flex-col items-center justify-start h-full w-full">
       <img style={imgStyle} src={imgSource} className="w-full h-1/6" />
-      <div className="w-full h-2/6 flex flex-col justify-center items-center gap-5">
+      <div className="w-full h-2/6 flex flex-col justify-center items-center space-x-5 space-y-5">
         <div className="flex justify-center items-center">
           <QuestionIconText text={"Q" + order.toString()} />
         </div>
-        <div className="justify-center items-center flex flex-col w-11/12 gap-y-2">
+        <div className="justify-center items-center flex flex-col w-11/12 space-y-2">
           {title.split("\n").map((titleLine, index) => (
             <span key={index} style={descTextStyle}>
               {titleLine}
@@ -39,8 +39,8 @@ const Question: React.FC<QuestionProps> = () => {
         className={
           "flex h-3/6 w-full pb-10 " +
           (choices.length > 5
-            ? "flex-wrap justify-center items-start gap-1"
-            : "flex-col justify-start items-center gap-y-1")
+            ? "flex-wrap justify-center items-start space-x-1 space-y-1"
+            : "flex-col justify-start items-center space-y-1")
         }
       >
         {choices.map((choice, index) => (

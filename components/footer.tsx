@@ -4,9 +4,9 @@ const Footer: React.FC = () => {
   return (
     <div
       style={rootStyle}
-      className="flex flex-col justify-end items-center gap-7 p-10 pt-20 w-full"
+      className="flex flex-col justify-end items-center space-x-7 space-y-7 p-10 pt-20 w-full"
     >
-      <div className="w-9/12 grid grid-cols-3 gap-3">
+      <div className="w-9/12 grid grid-cols-3 space-x-3 space-y-3">
         <span style={contactsStyle}>Instagram</span>
         <span style={contactsStyle} className="col-span-2">
           @teamtripbuilder

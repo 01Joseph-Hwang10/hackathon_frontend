@@ -28,7 +28,9 @@ const mapToDto = (choices: number[][]): PostAnswersDTO => {
 
 export const postAnswers = async (choices: number[][]): Promise<void> => {
   try {
-    const result = await axios.post(REPORT, mapToDto(choices));
+    const result = await axios.post(REPORT, mapToDto(choices), {
+      timeout: 3500,
+    });
     console.log(result);
   } catch (error) {
     console.error(error);

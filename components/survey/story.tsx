@@ -37,7 +37,7 @@ const Story: React.FC = () => {
     <div className="flex flex-col items-center justify-start h-full w-full">
       <img style={imgStyle} src={imgSource} className="w-full h-2/3" />
       <div className="w-full h-1/3 flex flex-col justify-center items-center">
-        <div className="w-full h-3/4 flex justify-center items-center gap-2">
+        <div className="w-full h-3/4 flex justify-center items-center space-x-2 space-y-2">
           {title.split("\n").map((aTitle, index) => (
             <span key={index} style={textStyle}>
               {aTitle}

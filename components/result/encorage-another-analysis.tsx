@@ -16,7 +16,7 @@ const EncorageAnotherAnalysis: React.FC<EncorageAnotherAnalysisProps> = ({
   };
 
   return (
-    <div className="w-10/12 flex flex-col justify-start items-center mt-28 gap-3">
+    <div className="w-10/12 flex flex-col justify-start items-center mt-28 space-x-3 space-y-3">
       <span style={titleStyle}>잠시만요! 다른 결과를 확인해보세요!</span>
       <button
         style={borderStyle}

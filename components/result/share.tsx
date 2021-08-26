@@ -16,7 +16,7 @@ const Share: React.FC = () => {
   };
 
   return (
-    <div className="w-full justify-center items-center flex flex-col gap-3 pb-28">
+    <div className="w-full justify-center items-center flex flex-col space-x-3 space-y-3 pb-28">
       <button
         style={{ ...buttonStyle, opacity: loading ? 0.7 : 1 }}
         className="btn"

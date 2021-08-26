@@ -46,14 +46,14 @@ const Home: React.FC<HomeProps> = ({ resetState: ResetState }) => {
       </div>
       <div
         id="interactions"
-        className="flex flex-col gap-5 justify-center items-center w-full h-2/6"
+        className="flex flex-col space-x-5 space-y-5 justify-center items-center w-full h-2/6"
       >
         <TBLargeButton
           onClick={startSurvey}
           text={"여행 한 번 떠나볼까?"}
           numChoices={0}
         />
-        <div className="justify-center items-center flex flex-col gap-1">
+        <div className="justify-center items-center flex flex-col space-x-1 space-y-1">
           <span style={subTextStyle}>인스타그램 공유 이벤트 진행 중!</span>
           <Link href="https://www.instagram.com/teamtripbuilder/">
             <span

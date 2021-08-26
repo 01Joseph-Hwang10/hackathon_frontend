@@ -58,11 +58,11 @@ const ResultBody: React.FC<ResultBodyProps> = ({
       />
       <div
         id="descriptionImage"
-        className="flex justify-center items-center w-screen my-10 mt-20"
+        className="flex justify-center items-center w-screen my-10 mt-20 mx-auto"
       >
         <img
           style={imgStyle}
-          className="w-full"
+          className="w-full mx-auto"
           src={
             resultNameMapping[viewMode][
               viewMode === "gmm" ? gmmResult : kMeanResult
