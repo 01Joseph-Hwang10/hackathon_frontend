@@ -9,31 +9,23 @@ export default [
         "vars": [
           {
             "title": "\ubaa8\ud5d8\uc120\ud638\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.772727"
+            "tagTitle": [],
+            "weight": "-1.777778"
           },
           {
             "title": "\uc5ec\ud589\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4\uacf5\uc720"
-            ],
-            "weight": "1.29545"
+            "tagTitle": [],
+            "weight": "1.311111"
           },
           {
             "title": "\ubc00\uc9d1\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.45455"
+            "tagTitle": [],
+            "weight": "-1.466667"
           },
           {
             "title": "\uad50\ub958\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.22727"
+            "tagTitle": [],
+            "weight": "-1.244444"
           }
         ]
       },
@@ -42,31 +34,23 @@ export default [
         "vars": [
           {
             "title": "\ubaa8\ud5d8\uc120\ud638\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "2.31818"
+            "tagTitle": [],
+            "weight": "2.333333"
           },
           {
             "title": "\uc5ec\ud589\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4\uacf5\uc720"
-            ],
-            "weight": "0.29545"
+            "tagTitle": [],
+            "weight": "0.355556"
           },
           {
             "title": "\ubc00\uc9d1\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.84091"
+            "tagTitle": [],
+            "weight": "1.866667"
           },
           {
             "title": "\uad50\ub958\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "0.59091"
+            "tagTitle": [],
+            "weight": "0.622222"
           }
         ]
       }
@@ -82,16 +66,12 @@ export default [
         "vars": [
           {
             "title": "\ub0a0\uc528\ubbfc\uac10\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.536585"
+            "tagTitle": [],
+            "weight": "-1.536885"
           },
           {
             "title": "\uc989\ud765\ucc38\uc5ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
+            "tagTitle": [],
             "weight": "-0.073171"
           }
         ]
@@ -101,16 +81,12 @@ export default [
         "vars": [
           {
             "title": "\ub0a0\uc528\ubbfc\uac10\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.536585"
+            "tagTitle": [],
+            "weight": "1.536885"
           },
           {
             "title": "\uc989\ud765\ucc38\uc5ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
+            "tagTitle": [],
             "weight": "0.073171"
           }
         ]
@@ -127,17 +103,13 @@ export default [
         "vars": [
           {
             "title": "\ud3b8\uc758\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
+            "tagTitle": [],
             "weight": "-2.268293"
           },
           {
             "title": "\ud53c\ub85c\ucd5c\uc18c\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "0.2439"
+            "tagTitle": [],
+            "weight": "0.243902"
           }
         ]
       },
@@ -146,17 +118,13 @@ export default [
         "vars": [
           {
             "title": "\ud3b8\uc758\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
+            "tagTitle": [],
             "weight": "2.268293"
           },
           {
             "title": "\ud53c\ub85c\ucd5c\uc18c\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-0.2439"
+            "tagTitle": [],
+            "weight": "-0.243902"
           }
         ]
       }
@@ -172,17 +140,12 @@ export default [
         "vars": [
           {
             "title": "\ub2e8\uc21c\ud589\ub3d9\ud615",
-            "tagTitle": [
-              "\uc989\ud765",
-              "\uc2e0\uc18d"
-            ],
-            "weight": "2.26829"
+            "tagTitle": [],
+            "weight": "2.268293"
           },
           {
             "title": "\ud574\uacb0\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
+            "tagTitle": [],
             "weight": "-2.268293"
           }
         ]
@@ -192,17 +155,12 @@ export default [
         "vars": [
           {
             "title": "\ub2e8\uc21c\ud589\ub3d9\ud615",
-            "tagTitle": [
-              "\uc989\ud765",
-              "\uc2e0\uc18d"
-            ],
-            "weight": "0.07317"
+            "tagTitle": [],
+            "weight": "0.073171"
           },
           {
             "title": "\ud574\uacb0\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
+            "tagTitle": [],
             "weight": "-0.634146"
           }
         ]
@@ -212,18 +170,13 @@ export default [
         "vars": [
           {
             "title": "\ub2e8\uc21c\ud589\ub3d9\ud615",
-            "tagTitle": [
-              "\uc989\ud765",
-              "\uc2e0\uc18d"
-            ],
-            "weight": "0.73171"
+            "tagTitle": [],
+            "weight": "0.731707"
           },
           {
             "title": "\ud574\uacb0\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.21951"
+            "tagTitle": [],
+            "weight": "2.219512"
           }
         ]
       }
@@ -239,24 +192,18 @@ export default [
         "vars": [
           {
             "title": "\uc2dd\ub2f9\uc9c1\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "1.67"
+            "tagTitle": [],
+            "weight": "1.666667"
           },
           {
             "title": "\uc678\ubd80\uc601\ud5a5\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-0.69"
+            "tagTitle": [],
+            "weight": "-0.688889"
           },
           {
             "title": "\ub3c4\uc6c0\uc694\uccad\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.64"
+            "tagTitle": [],
+            "weight": "-0.644444"
           }
         ]
       },
@@ -265,24 +212,18 @@ export default [
         "vars": [
           {
             "title": "\uc2dd\ub2f9\uc9c1\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "0.11"
+            "tagTitle": [],
+            "weight": "0.111111"
           },
           {
             "title": "\uc678\ubd80\uc601\ud5a5\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.18"
+            "tagTitle": [],
+            "weight": "2.177778"
           },
           {
             "title": "\ub3c4\uc6c0\uc694\uccad\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "1.76"
+            "tagTitle": [],
+            "weight": "1.755556"
           }
         ]
       },
@@ -291,24 +232,18 @@ export default [
         "vars": [
           {
             "title": "\uc2dd\ub2f9\uc9c1\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "1.51"
+            "tagTitle": [],
+            "weight": "1.511111"
           },
           {
             "title": "\uc678\ubd80\uc601\ud5a5\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.02"
+            "tagTitle": [],
+            "weight": "2.022222"
           },
           {
             "title": "\ub3c4\uc6c0\uc694\uccad\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.64"
+            "tagTitle": [],
+            "weight": "-0.644444"
           }
         ]
       },
@@ -317,24 +252,18 @@ export default [
         "vars": [
           {
             "title": "\uc2dd\ub2f9\uc9c1\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.87"
+            "tagTitle": [],
+            "weight": "-1.866667"
           },
           {
             "title": "\uc678\ubd80\uc601\ud5a5\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.67"
+            "tagTitle": [],
+            "weight": "-1.666667"
           },
           {
             "title": "\ub3c4\uc6c0\uc694\uccad\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.24"
+            "tagTitle": [],
+            "weight": "-1.244444"
           }
         ]
       },
@@ -343,24 +272,18 @@ export default [
         "vars": [
           {
             "title": "\uc2dd\ub2f9\uc9c1\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.98"
+            "tagTitle": [],
+            "weight": "-1.977778"
           },
           {
             "title": "\uc678\ubd80\uc601\ud5a5\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "0.91"
+            "tagTitle": [],
+            "weight": "0.911111"
           },
           {
             "title": "\ub3c4\uc6c0\uc694\uccad\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "0.36"
+            "tagTitle": [],
+            "weight": "0.355556"
           }
         ]
       }
@@ -376,31 +299,23 @@ export default [
         "vars": [
           {
             "title": "\uc989\ud765\uc120\ud0dd\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "0.47"
+            "tagTitle": [],
+            "weight": "0.466667"
           },
           {
             "title": "\uc0c8\ub85c\uc6c0\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "1.98"
+            "tagTitle": [],
+            "weight": "1.977778"
           },
           {
             "title": "\uc74c\uc2dd\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "0.53"
+            "tagTitle": [],
+            "weight": "0.533333"
           },
           {
             "title": "\uc2dc\uac01\uc911\uc2dc\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "0.31"
+            "tagTitle": [],
+            "weight": "0.311111"
           }
         ]
       },
@@ -409,31 +324,23 @@ export default [
         "vars": [
           {
             "title": "\uc989\ud765\uc120\ud0dd\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-0.11"
+            "tagTitle": [],
+            "weight": "-0.111111"
           },
           {
             "title": "\uc0c8\ub85c\uc6c0\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.51"
+            "tagTitle": [],
+            "weight": "-1.511111"
           },
           {
             "title": "\uc74c\uc2dd\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.27"
+            "tagTitle": [],
+            "weight": "-0.266667"
           },
           {
             "title": "\uc2dc\uac01\uc911\uc2dc\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.42"
+            "tagTitle": [],
+            "weight": "-0.422222"
           }
         ]
       },
@@ -442,31 +349,23 @@ export default [
         "vars": [
           {
             "title": "\uc989\ud765\uc120\ud0dd\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "0.82"
+            "tagTitle": [],
+            "weight": "0.822222"
           },
           {
             "title": "\uc0c8\ub85c\uc6c0\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.96"
+            "tagTitle": [],
+            "weight": "-1.955556"
           },
           {
             "title": "\uc74c\uc2dd\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.98"
+            "tagTitle": [],
+            "weight": "-0.977778"
           },
           {
             "title": "\uc2dc\uac01\uc911\uc2dc\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.53"
+            "tagTitle": [],
+            "weight": "-0.533333"
           }
         ]
       },
@@ -475,31 +374,23 @@ export default [
         "vars": [
           {
             "title": "\uc989\ud765\uc120\ud0dd\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.49"
+            "tagTitle": [],
+            "weight": "-2.488889"
           },
           {
             "title": "\uc0c8\ub85c\uc6c0\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "1.58"
+            "tagTitle": [],
+            "weight": "1.577778"
           },
           {
             "title": "\uc74c\uc2dd\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.18"
+            "tagTitle": [],
+            "weight": "2.177778"
           },
           {
             "title": "\uc2dc\uac01\uc911\uc2dc\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.38"
+            "tagTitle": [],
+            "weight": "2.377778"
           }
         ]
       },
@@ -508,31 +399,23 @@ export default [
         "vars": [
           {
             "title": "\uc989\ud765\uc120\ud0dd\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "2.73"
+            "tagTitle": [],
+            "weight": "2.733333"
           },
           {
             "title": "\uc0c8\ub85c\uc6c0\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "0.96"
+            "tagTitle": [],
+            "weight": "0.955556"
           },
           {
             "title": "\uc74c\uc2dd\uacf5\uc720\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.33"
+            "tagTitle": [],
+            "weight": "-0.333333"
           },
           {
             "title": "\uc2dc\uac01\uc911\uc2dc\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.67"
+            "tagTitle": [],
+            "weight": "-0.666667"
           }
         ]
       }
@@ -548,24 +431,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.18"
+            "tagTitle": [],
+            "weight": "2.177778"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.36"
+            "tagTitle": [],
+            "weight": "2.355556"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.91"
+            "tagTitle": [],
+            "weight": "1.911111"
           }
         ]
       },
@@ -574,24 +451,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.09"
+            "tagTitle": [],
+            "weight": "2.088889"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-0.76"
+            "tagTitle": [],
+            "weight": "-0.755556"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "0.11"
+            "tagTitle": [],
+            "weight": "0.111111"
           }
         ]
       },
@@ -600,24 +471,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.40"
+            "tagTitle": [],
+            "weight": "-1.4"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "1.20"
+            "tagTitle": [],
+            "weight": "1.2"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.09"
+            "tagTitle": [],
+            "weight": "-0.088889"
           }
         ]
       },
@@ -626,24 +491,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.93"
+            "tagTitle": [],
+            "weight": "1.933333"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.13"
+            "tagTitle": [],
+            "weight": "2.133333"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.47"
+            "tagTitle": [],
+            "weight": "-0.466667"
           }
         ]
       },
@@ -652,24 +511,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.93"
+            "tagTitle": [],
+            "weight": "-1.933333"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-2.07"
+            "tagTitle": [],
+            "weight": "-2.066667"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "0.98"
+            "tagTitle": [],
+            "weight": "0.977778"
           }
         ]
       },
@@ -678,24 +531,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "-1.89"
+            "tagTitle": [],
+            "weight": "-1.888889"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-1.16"
+            "tagTitle": [],
+            "weight": "-1.155556"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "2.62"
+            "tagTitle": [],
+            "weight": "2.622222"
           }
         ]
       },
@@ -704,24 +551,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.09"
+            "tagTitle": [],
+            "weight": "-0.4"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-0.76"
+            "tagTitle": [],
+            "weight": "1.488889"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "0.31"
+            "tagTitle": [],
+            "weight": "0.311111"
           }
         ]
       },
@@ -730,24 +571,18 @@ export default [
         "vars": [
           {
             "title": "\uc18c\ud1b5\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "0.93"
+            "tagTitle": [],
+            "weight": "0.933333"
           },
           {
             "title": "\uc219\uc18c\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "1.73"
+            "tagTitle": [],
+            "weight": "1.733333"
           },
           {
             "title": "\uc219\uc18c\uc790\ub9bd\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.09"
+            "tagTitle": [],
+            "weight": "-1.088889"
           }
         ]
       }
@@ -763,38 +598,28 @@ export default [
         "vars": [
           {
             "title": "\ub7ed\uc154\ub9ac\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.24"
+            "tagTitle": [],
+            "weight": "2.243902"
           },
           {
             "title": "\uc2e0\uc18d\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\uc2e0\uc18d"
-            ],
-            "weight": "2.17"
+            "tagTitle": [],
+            "weight": "2.170732"
           },
           {
             "title": "\uc11c\ube44\uc2a4\uacbd\ud5d8\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.02"
+            "tagTitle": [],
+            "weight": "2.02439"
           },
           {
             "title": "\ubd88\ud3b8\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.73"
+            "tagTitle": [],
+            "weight": "1.731707"
           },
           {
             "title": "\uacc4\ud68d\ubb34\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.32"
+            "tagTitle": [],
+            "weight": "-1.317073"
           }
         ]
       },
@@ -803,38 +628,28 @@ export default [
         "vars": [
           {
             "title": "\ub7ed\uc154\ub9ac\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.44"
+            "tagTitle": [],
+            "weight": "2.439024"
           },
           {
             "title": "\uc2e0\uc18d\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\uc2e0\uc18d"
-            ],
-            "weight": "-0.63"
+            "tagTitle": [],
+            "weight": "-0.634146"
           },
           {
             "title": "\uc11c\ube44\uc2a4\uacbd\ud5d8\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.17"
+            "tagTitle": [],
+            "weight": "2.170732"
           },
           {
             "title": "\ubd88\ud3b8\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "0.88"
+            "tagTitle": [],
+            "weight": "0.878049"
           },
           {
             "title": "\uacc4\ud68d\ubb34\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.34"
+            "tagTitle": [],
+            "weight": "-1.341463"
           }
         ]
       },
@@ -843,38 +658,28 @@ export default [
         "vars": [
           {
             "title": "\ub7ed\uc154\ub9ac\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.66"
+            "tagTitle": [],
+            "weight": "2.658537"
           },
           {
             "title": "\uc2e0\uc18d\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\uc2e0\uc18d"
-            ],
-            "weight": "-0.51"
+            "tagTitle": [],
+            "weight": "-0.512195"
           },
           {
             "title": "\uc11c\ube44\uc2a4\uacbd\ud5d8\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.22"
+            "tagTitle": [],
+            "weight": "2.219512"
           },
           {
             "title": "\ubd88\ud3b8\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "2.00"
+            "tagTitle": [],
+            "weight": "2"
           },
           {
             "title": "\uacc4\ud68d\ubb34\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.27"
+            "tagTitle": [],
+            "weight": "-1.268293"
           }
         ]
       },
@@ -883,38 +688,28 @@ export default [
         "vars": [
           {
             "title": "\ub7ed\uc154\ub9ac\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.41"
+            "tagTitle": [],
+            "weight": "2.414634"
           },
           {
             "title": "\uc2e0\uc18d\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\uc2e0\uc18d"
-            ],
-            "weight": "-1.32"
+            "tagTitle": [],
+            "weight": "-1.317073"
           },
           {
             "title": "\uc11c\ube44\uc2a4\uacbd\ud5d8\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.17"
+            "tagTitle": [],
+            "weight": "2.170732"
           },
           {
             "title": "\ubd88\ud3b8\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.54"
+            "tagTitle": [],
+            "weight": "1.536585"
           },
           {
             "title": "\uacc4\ud68d\ubb34\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.39"
+            "tagTitle": [],
+            "weight": "-1.390244"
           }
         ]
       },
@@ -923,38 +718,28 @@ export default [
         "vars": [
           {
             "title": "\ub7ed\uc154\ub9ac\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "1.10"
+            "tagTitle": [],
+            "weight": "1.097561"
           },
           {
             "title": "\uc2e0\uc18d\ucd94\uad6c\ud615",
-            "tagTitle": [
-              "\uc2e0\uc18d"
-            ],
-            "weight": "0.10"
+            "tagTitle": [],
+            "weight": "0.097561"
           },
           {
             "title": "\uc11c\ube44\uc2a4\uacbd\ud5d8\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "1.37"
+            "tagTitle": [],
+            "weight": "1.365854"
           },
           {
             "title": "\ubd88\ud3b8\ud68c\ud53c\ud615",
-            "tagTitle": [
-              "\ubbfc\uac10"
-            ],
-            "weight": "1.37"
+            "tagTitle": [],
+            "weight": "1.365854"
           },
           {
             "title": "\uacc4\ud68d\ubb34\uad00\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.68"
+            "tagTitle": [],
+            "weight": "-1.682927"
           }
         ]
       }
@@ -970,45 +755,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.51"
+            "tagTitle": [],
+            "weight": "-2.512195"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.12"
+            "tagTitle": [],
+            "weight": "-2.121951"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.12"
+            "tagTitle": [],
+            "weight": "2.121951"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.51"
+            "tagTitle": [],
+            "weight": "2.512195"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "1.32"
+            "tagTitle": [],
+            "weight": "1.317073"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.07"
+            "tagTitle": [],
+            "weight": "2.073171"
           }
         ]
       },
@@ -1017,45 +790,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.76"
+            "tagTitle": [],
+            "weight": "-1.756098"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-1.78"
+            "tagTitle": [],
+            "weight": "-1.780488"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "1.78"
+            "tagTitle": [],
+            "weight": "1.780488"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.56"
+            "tagTitle": [],
+            "weight": "-0.560976"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.10"
+            "tagTitle": [],
+            "weight": "-0.097561"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.37"
+            "tagTitle": [],
+            "weight": "2.365854"
           }
         ]
       },
@@ -1064,45 +825,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "1.68"
+            "tagTitle": [],
+            "weight": "1.682927"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "0.85"
+            "tagTitle": [],
+            "weight": "0.853659"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-0.85"
+            "tagTitle": [],
+            "weight": "-0.853659"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-1.12"
+            "tagTitle": [],
+            "weight": "-1.121951"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-1.95"
+            "tagTitle": [],
+            "weight": "-1.95122"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-0.98"
+            "tagTitle": [],
+            "weight": "-0.97561"
           }
         ]
       },
@@ -1111,45 +860,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "1.54"
+            "tagTitle": [],
+            "weight": "1.536585"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "1.63"
+            "tagTitle": [],
+            "weight": "1.634146"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-1.63"
+            "tagTitle": [],
+            "weight": "-1.634146"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-2.22"
+            "tagTitle": [],
+            "weight": "-2.219512"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-2.10"
+            "tagTitle": [],
+            "weight": "-2.097561"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-2.15"
+            "tagTitle": [],
+            "weight": "-2.146341"
           }
         ]
       },
@@ -1158,45 +895,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.49"
+            "tagTitle": [],
+            "weight": "-2.487805"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.54"
+            "tagTitle": [],
+            "weight": "-2.536585"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.54"
+            "tagTitle": [],
+            "weight": "2.536585"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "1.32"
+            "tagTitle": [],
+            "weight": "1.317073"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "2.00"
+            "tagTitle": [],
+            "weight": "2"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "1.39"
+            "tagTitle": [],
+            "weight": "1.390244"
           }
         ]
       },
@@ -1205,45 +930,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "2.83"
+            "tagTitle": [],
+            "weight": "2.829268"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "2.59"
+            "tagTitle": [],
+            "weight": "2.585366"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-2.59"
+            "tagTitle": [],
+            "weight": "-2.585366"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "-1.56"
+            "tagTitle": [],
+            "weight": "-1.560976"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "-0.88"
+            "tagTitle": [],
+            "weight": "-0.878049"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "-0.66"
+            "tagTitle": [],
+            "weight": "-0.658537"
           }
         ]
       },
@@ -1252,45 +965,33 @@ export default [
         "vars": [
           {
             "title": "\uce74\ud398\uc989\ud765\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.61"
+            "tagTitle": [],
+            "weight": "-2.609756"
           },
           {
             "title": "\ub9ac\ubdf0\ubb34\uad00\uc2ec\ud615",
-            "tagTitle": [
-              "\uc989\ud765"
-            ],
-            "weight": "-2.12"
+            "tagTitle": [],
+            "weight": "-2.121951"
           },
           {
             "title": "\ub9ac\ubdf0\uac80\uc99d\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.12"
+            "tagTitle": [],
+            "weight": "2.121951"
           },
           {
             "title": "\uac10\uc131\uc0ac\uc9c4\ud615",
-            "tagTitle": [
-              "\ubbf8\ub514\uc5b4 \uacf5\uc720"
-            ],
-            "weight": "2.46"
+            "tagTitle": [],
+            "weight": "2.463415"
           },
           {
             "title": "\ud604\uc9c0\uccb4\ud5d8\ud615",
-            "tagTitle": [
-              "\ub3c4\uc804"
-            ],
-            "weight": "2.22"
+            "tagTitle": [],
+            "weight": "2.219512"
           },
           {
             "title": "\uce74\ud398\ud22c\uc790\ud615",
-            "tagTitle": [
-              "\ud50c\ub809\uc2a4"
-            ],
-            "weight": "2.37"
+            "tagTitle": [],
+            "weight": "2.365854"
           }
         ]
       }

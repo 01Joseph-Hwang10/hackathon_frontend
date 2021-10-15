@@ -1,3 +1,4 @@
 selenium
 notion
 tqdm
+openpyxl

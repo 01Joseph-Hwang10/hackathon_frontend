@@ -1,9 +1,6 @@
 import { TotalScore } from "@slices/score";
 import { TTVTags } from "@src/data/travel-tendency-vars.types";
-import {
-  findTagTitleByTTVTag,
-  findTTVTagByTagTitle,
-} from "@src/functions/helpers";
+import { findTagTitleByTTVTag } from "@src/functions/helpers";
 import React from "react";
 import {
   VictoryArea,
