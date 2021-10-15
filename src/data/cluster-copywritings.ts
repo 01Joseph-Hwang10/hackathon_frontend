@@ -51,7 +51,7 @@ export const kMeansCopywritings: Copywriting[] = [
   },
   {
     clusterLabel: "2",
-    title: "돌격하라! 여행 불도저",
+    title: "돌격하라! 열정 불도저",
     subtitle: "모든 준비는 끝났다. 남은건 오직 여행뿐",
     descriptions: [
       "#여행 준비부터 완벽해요.",

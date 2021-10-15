@@ -18,11 +18,7 @@ type ResultBodyReduxProps = ConnectedProps<typeof connector>;
 
 interface ResultBodyProps extends ResultBodyReduxProps {}
 
-const ResultBody: React.FC<ResultBodyProps> = ({
-  totalScore,
-  kMeanResult,
-  gmmResult,
-}) => {
+const ResultBody: React.FC<ResultBodyProps> = ({ kMeanResult, gmmResult }) => {
   const [viewMode, setViewMode] = useState<ClusterType>("k-means");
   const toggleViewMode = () => {
     if (viewMode === "gmm") {
