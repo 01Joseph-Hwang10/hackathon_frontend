@@ -28,15 +28,15 @@ const MarkdownText: React.FC<MarkdownTextProps> = ({ text }) => {
 
 const BoldTitle: React.FC<MarkdownTextProps> = ({ text }) => {
   return (
-    <li className="list-none w-9/12">
-      <span>&quot; {text} &quot;</span>
+    <li className="list-none w-9/12 my-2">
+      <span style={boldTitleStyle}>&quot; {text} &quot;</span>
     </li>
   );
 };
 
 const ListTitle: React.FC<MarkdownTextProps> = ({ text }) => {
   return (
-    <li className="list-none w-9/12">
+    <li className="list-none w-9/12 my-1.5">
       <span style={listTitleStyle}>{text}</span>
     </li>
   );
@@ -55,7 +55,14 @@ const listTitleStyle: React.CSSProperties = {
   fontStretch: "normal",
   fontStyle: "normal",
   lineHeight: 1.5,
-  letterSpacing: "normal",
+  letterSpacing: "-0.32px",
   textAlign: "left",
   color: "#191919",
+};
+
+const boldTitleStyle: React.CSSProperties = {
+  ...listTitleStyle,
+  fontFamily: "NanumSquareB",
+  fontSize: "18px",
+  letterSpacing: "-0.36px",
 };
