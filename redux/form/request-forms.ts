@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://stti-api.tripbuilder.co.kr";
+const BASE_URL = "https://stti-api.tripbuilder.co.kr";
 const SNS = `${BASE_URL}/sns`; // get
 const LIKE = `${BASE_URL}/results`; // get
 const REPORT = `${BASE_URL}/report`; // post
