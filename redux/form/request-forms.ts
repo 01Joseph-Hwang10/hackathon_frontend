@@ -1,3 +1,4 @@
+import { DevLog } from "@src/log";
 import axios from "axios";
 
 const BASE_URL = "https://stti-api.tripbuilder.co.kr";
@@ -28,21 +29,23 @@ const mapToDto = (choices: number[][]): PostAnswersDTO => {
 
 export const postAnswers = async (choices: number[][]): Promise<void> => {
   try {
-    const result = await axios.post(REPORT, mapToDto(choices), {
-      timeout: 3500,
-    });
-    console.log(result);
+    if (choices.length === 9) {
+      const result = await axios.post(REPORT, mapToDto(choices), {
+        timeout: 3500,
+      });
+      DevLog.info(result);
+    }
   } catch (error) {
-    console.error(error);
+    DevLog.error(error);
   }
 };
 
 export const snsPushed = async (): Promise<void> => {
   try {
     const result = await axios.get(SNS);
-    console.log(result);
+    DevLog.info(result);
   } catch (error) {
-    console.error(error);
+    DevLog.error(error);
   }
 };
 
@@ -53,9 +56,9 @@ export const likePushed = async (liked: boolean): Promise<void> => {
         good: liked,
       },
     });
-    console.log(result);
+    DevLog.info(result);
   } catch (error) {
-    console.error(error);
+    DevLog.error(error);
   }
 };
 
@@ -66,8 +69,8 @@ export const abPushed = async (type: "A" | "B"): Promise<void> => {
         type,
       },
     });
-    console.log(result);
+    DevLog.info(result);
   } catch (error) {
-    console.error(error);
+    DevLog.error(error);
   }
 };

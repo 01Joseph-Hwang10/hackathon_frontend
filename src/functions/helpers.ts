@@ -2,6 +2,7 @@ import { ttvVars } from "@src/data/travel-tendency-vars";
 import { TTVTags } from "@src/data/travel-tendency-vars.types";
 import { TTVQuestionType as TTVDataType } from "@src/data/questions.types";
 import { MinMaxRow } from "@src/data/dataset.types";
+import { DevLog } from "@src/log";
 
 export const findTTVIdByTitle = (title: string): number => {
   return ttvVars.findIndex((ttvVar) => ttvVar.title === title);
@@ -64,7 +65,7 @@ export const findRowByTitle = (dsArray: MinMaxRow[], title: string): MinMaxRow =
   try {
     return dsArray.filter(row => row[0] = title)[0]
   } catch (error) {
-    console.log(error)
+    DevLog.error(error);
     throw Error();
   }
 }
