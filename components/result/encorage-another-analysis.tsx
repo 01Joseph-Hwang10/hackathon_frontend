@@ -1,4 +1,4 @@
-import { ClusterType } from "@src/data/cluster.types";
+import { ClusterType } from "res/data/cluster.types";
 import React from "react";
 
 interface EncorageAnotherAnalysisProps {

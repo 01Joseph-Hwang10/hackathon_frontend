@@ -1,5 +1,5 @@
-import { QuestionVarId, QuestionVar } from "@src/data/questions.types";
-import { findTTVIdByTitle } from "@src/functions/helpers";
+import { QuestionVarId, QuestionVar } from "res/data/questions.types";
+import { findTTVIdByTitle } from "tools/functions/helpers";
 import { useEffect, useState } from "react";
 
 const varToVarId = (questionVar: QuestionVar): QuestionVarId => {

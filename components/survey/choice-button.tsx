@@ -4,8 +4,8 @@ import {
   QuestionChoice,
   QuestionVar,
   QuestionVarId,
-} from "@src/data/questions.types";
-import { findTTVIdByTitle } from "@src/functions/helpers";
+} from "res/data/questions.types";
+import { findTTVIdByTitle } from "tools/functions/helpers";
 import React from "react";
 import { useContext } from "react";
 import { connect, ConnectedProps } from "react-redux";

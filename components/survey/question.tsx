@@ -3,9 +3,9 @@ import { useContext } from "react";
 import ChoiceButton from "./choice-button";
 import { SurveyContext } from "../context/survey-context";
 import { useChoices } from "@hooks/useChoices";
-import { imageNameMapping } from "@src/data/image-name-mapping";
+import { imageNameMapping } from "res/data/image-name-mapping";
 import QuestionIconText from "@components/icon_texts/question-icon-text";
-import { Question as QuestionType } from "@src/data/questions.types";
+import { Question as QuestionType } from "res/data/questions.types";
 
 interface QuestionProps {}
 

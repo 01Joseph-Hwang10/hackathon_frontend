@@ -1,8 +1,8 @@
 import {
   gmmCopywritings,
   kMeansCopywritings,
-} from "@src/data/cluster-copywritings";
-import { ClusterType } from "@src/data/cluster.types";
+} from "res/data/cluster-copywritings";
+import { ClusterType } from "res/data/cluster.types";
 import React from "react";
 import MarkdownText from "./descriptions/markdown-text";
 

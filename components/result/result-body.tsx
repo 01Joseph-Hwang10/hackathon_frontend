@@ -1,8 +1,8 @@
 import Footer from "@components/footer";
 import ResultIconText from "@components/icon_texts/result-icon-text";
 import { RootState } from "@redux/root-reducer";
-import { ClusterType } from "@src/data/cluster.types";
-import { resultNameMapping } from "@src/data/image-name-mapping";
+import { ClusterType } from "res/data/cluster.types";
+import { resultNameMapping } from "res/data/image-name-mapping";
 import React from "react";
 import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";

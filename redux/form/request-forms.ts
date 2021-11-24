@@ -1,4 +1,4 @@
-import { DevLog } from "@src/log";
+import { DevLog } from "tools/log";
 import axios from "axios";
 
 const BASE_URL = "https://stti-api.tripbuilder.co.kr";

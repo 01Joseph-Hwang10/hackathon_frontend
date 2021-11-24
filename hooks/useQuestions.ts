@@ -1,5 +1,5 @@
-import { questions } from "@src/data/questions";
-import { Question, Story } from "@src/data/questions.types";
+import { questions } from "res/data/questions";
+import { Question, Story } from "res/data/questions.types";
 import { useEffect, useState } from "react";
 
 interface UseQuestionOutput {

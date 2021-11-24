@@ -4,8 +4,25 @@ import Layout from '../components/layout';
 import store from '../redux/store';
 import Head from 'next/head';
 import '../styles/globals.css'
+import { useRouter } from 'next/dist/client/router';
+import { useEffect } from 'react';
+import * as Analytics from '../tools/google-analytics/analytics';
 
 const MyApp = ({ Component, pageProps }) => {
+
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      Analytics.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <Provider store={store}>
       <Head>

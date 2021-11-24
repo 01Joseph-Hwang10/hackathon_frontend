@@ -2,7 +2,7 @@ import { SurveyContextProvider } from "@components/context/survey-context";
 import Question from "@components/survey/question";
 import Story from "@components/survey/story";
 import { useQuestions } from "@hooks/useQuestions";
-import { Colors } from "@src/constants";
+import { Colors } from "tools/constants";
 import Head from "next/head";
 import React from "react";
 

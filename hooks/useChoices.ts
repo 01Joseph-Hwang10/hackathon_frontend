@@ -1,4 +1,4 @@
-import { QuestionVarId } from "@src/data/questions.types";
+import { QuestionVarId } from "res/data/questions.types";
 import { useEffect, useState } from "react";
 
 interface UseChoicesInput {

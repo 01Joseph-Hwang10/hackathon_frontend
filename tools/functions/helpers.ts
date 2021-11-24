@@ -1,8 +1,8 @@
-import { ttvVars } from "@src/data/travel-tendency-vars";
-import { TTVTags } from "@src/data/travel-tendency-vars.types";
-import { TTVQuestionType as TTVDataType } from "@src/data/questions.types";
-import { MinMaxRow } from "@src/data/dataset.types";
-import { DevLog } from "@src/log";
+import { ttvVars } from "res/data/travel-tendency-vars";
+import { TTVTags } from "res/data/travel-tendency-vars.types";
+import { TTVQuestionType as TTVDataType } from "res/data/questions.types";
+import { MinMaxRow } from "res/data/dataset.types";
+import { DevLog } from "tools/log";
 
 export const findTTVIdByTitle = (title: string): number => {
   return ttvVars.findIndex((ttvVar) => ttvVar.title === title);

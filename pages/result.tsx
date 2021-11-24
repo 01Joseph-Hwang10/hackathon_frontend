@@ -13,7 +13,7 @@ import {
 import {
   calculateScore,
   estimateClusterLabel,
-} from "@src/functions/calculations";
+} from "tools/functions/calculations";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";

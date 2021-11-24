@@ -1,4 +1,4 @@
-import { Question, Story } from "@src/data/questions.types";
+import { Question, Story } from "res/data/questions.types";
 import React from "react";
 
 interface SurveyContextProps {

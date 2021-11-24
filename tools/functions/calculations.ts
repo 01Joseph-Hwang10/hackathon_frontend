@@ -1,16 +1,16 @@
 import { initTotalScore, TotalScore } from "@slices/score";
-import { Cluster, ClusterType } from "@src/data/cluster.types";
+import { Cluster, ClusterType } from "res/data/cluster.types";
 import {
   rangeDatasetDetail,
   rangeDatasetGroup,
   rankingDatasetDetail,
   rankingDatasetGroup,
-} from "@src/data/dataset";
-import { gmmClusters } from "@src/data/gmm";
-import { kMeansClusters } from "@src/data/k-means";
-import { QuestionVarId } from "@src/data/questions.types";
-import { ttvVars } from "@src/data/travel-tendency-vars";
-import { TTVTags, TTVVar } from "@src/data/travel-tendency-vars.types";
+} from "res/data/dataset";
+import { gmmClusters } from "res/data/gmm";
+import { kMeansClusters } from "res/data/k-means";
+import { QuestionVarId } from "res/data/questions.types";
+import { ttvVars } from "res/data/travel-tendency-vars";
+import { TTVTags, TTVVar } from "res/data/travel-tendency-vars.types";
 import { findRowByTitle, getTTVDataTypeByDataTypeTitle } from "./helpers";
 
 export const normalize = ({

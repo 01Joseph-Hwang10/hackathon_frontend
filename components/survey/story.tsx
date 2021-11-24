@@ -1,6 +1,6 @@
 import { SurveyContext } from "@components/context/survey-context";
-import { imageNameMapping } from "@src/data/image-name-mapping";
-import { Story as StoryType } from "@src/data/questions.types";
+import { imageNameMapping } from "res/data/image-name-mapping";
+import { Story as StoryType } from "res/data/questions.types";
 import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";

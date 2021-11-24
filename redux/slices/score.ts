@@ -1,6 +1,6 @@
 import { CaseReducer, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { QuestionVarId } from "@src/data/questions.types";
-import { TTVTags } from "@src/data/travel-tendency-vars.types";
+import { QuestionVarId } from "res/data/questions.types";
+import { TTVTags } from "res/data/travel-tendency-vars.types";
 
 export type TotalScore = Record<TTVTags, number>;
 
