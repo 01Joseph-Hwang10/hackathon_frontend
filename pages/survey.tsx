@@ -3,8 +3,8 @@ import Question from "@components/survey/question";
 import Story from "@components/survey/story";
 import { useQuestions } from "@hooks/useQuestions";
 import { Colors } from "tools/constants";
-import Head from "next/head";
 import React from "react";
+import { useReloadGuard } from "@hooks/useReloadGuard";
 
 interface SurveyProps {}
 
@@ -16,6 +16,7 @@ const Survey: React.FC<SurveyProps> = () => {
     onFadeOut,
     cleanUpCurrent,
   } = useQuestions();
+  useReloadGuard();
 
   const transitionStyle: React.CSSProperties = {
     transitionProperty: "opacity",
@@ -31,9 +32,6 @@ const Survey: React.FC<SurveyProps> = () => {
     <SurveyContextProvider
       value={{ questionOrStory, goToNext, questionIndex, cleanUpCurrent }}
     >
-      <Head>
-        <title>여행성향 테스트 | 트립빌더</title>
-      </Head>
       <div
         style={{ ...rootStyle, ...transitionStyle, ...opacityStyle }}
         className={"w-screen justify-center items-center flex flex-col"}

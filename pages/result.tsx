@@ -19,8 +19,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Dispatch } from "redux";
-import Head from "next/head";
 import { useRef } from "react";
+import { useReloadGuard } from "@hooks/useReloadGuard";
 
 type ResultReduxProps = ConnectedProps<typeof connector>;
 
@@ -36,6 +36,7 @@ const Result: React.FC<ResultProps> = ({
   const delayRef = useRef<NodeJS.Timeout | null>(null);
   const [loading, setLoading] = useState(true);
 
+  useReloadGuard();
   useEffect(() => {
     delayRef.current = setTimeout(() => {
       const totalScore = calculateScore(variables);
@@ -59,9 +60,6 @@ const Result: React.FC<ResultProps> = ({
         (loading ? "h-screen" : "")
       }
     >
-      <Head>
-        <title>여행성향 테스트 - 결과 | 트립빌더</title>
-      </Head>
       {loading ? <ResultLoading /> : <ResultBody />}
     </div>
   );
