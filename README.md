@@ -31,3 +31,7 @@ npm run dev
 :---: | :---: | :---: | :---: | :---:
 ![시작 화면](./examples/stti-start.png) | ![설문 화면](./examples/stti-first.png) | ![결과 화면 (1)](./examples/stti-second-1.png) | ![결과 화면 (2)](./examples/stti-second-2.png) | ![결과 화면 (3)](./examples/stti-second-3.png)
 
+## Achievements
+
+- 경기콘텐츠진흥원 주관 2021 애자일 해커톤 우수상
+
